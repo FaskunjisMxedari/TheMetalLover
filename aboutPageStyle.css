@@ -1,0 +1,311 @@
+body {
+  margin: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+/*header is split into two parts left and right
+left part contains just logo and right part contains
+important pages: Home; About; Subscribe; search and facebook/twitter(a.k.a. x)
+links/hyperlinks, using sass/scss i have created a hierarchy which might be
+hard to understand even for me. since i am writing this comment at the begining
+i myself don't know yet. i will keep you updated*/
+header {
+  background-color: white;
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+header .left {
+  width: 50%;
+}
+header .left div {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+header .left div #logo {
+  width: 7.5%;
+  height: 100%;
+  margin: 2.5% 1.5%;
+}
+header .left div h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 200%;
+}
+header .right {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 2%;
+}
+header .right ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .right ul li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+header .right ul input.submit {
+  border: 0;
+  padding: 2vh 1vw 2vh 3vw;
+  height: 2.8vh;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+  width: 15vw;
+}
+header .right img {
+  width: 3vw;
+  height: 3vh;
+}
+
+main section.decoration {
+  width: 100vw;
+  position: absolute;
+  z-index: -2;
+  top: 5vh;
+}
+main section.decoration div.decorContainer {
+  width: 100%;
+  height: 45vh;
+}
+main section.decoration div.decorContainer img {
+  width: 100%;
+  height: 100%;
+}
+main div.pfpContainer {
+  width: 100vw;
+  height: 53vh;
+  display: flex;
+  justify-content: center;
+  align-items: self-end;
+}
+main div.pfpContainer img {
+  width: 21%;
+  height: 55%;
+}
+main section.contentOfText {
+  width: 50%;
+  height: auto;
+  padding: 5% 25%;
+}
+main section.contentOfText div {
+  text-align: center;
+  line-height: 2;
+}
+
+footer {
+  height: auto;
+  width: 50%;
+  background-color: black;
+  padding: 5% 25% 0 25%;
+}
+footer div {
+  color: white;
+}
+footer div.SignUp {
+  width: auto;
+  height: auto;
+}
+footer div.SignUp ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer div.SignUp ul li {
+  margin: 2% 0;
+}
+footer div.SignUp input.SignUp {
+  border: 1px solid;
+  padding: 0vh 4vw 0vh 1vw;
+  height: 2.8vh;
+  width: 10vw;
+  color: white;
+  background-color: black;
+}
+footer div.SignUp #fName {
+  border: 1px solid;
+  padding: 0vh 4vw 0vh 1vw;
+  height: 2.8vh;
+  width: 10vw;
+  color: white;
+  background-color: black;
+}
+footer div.SignUp #pNumber {
+  border: 1px solid;
+  padding: 0vh 4vw 0vh 1vw;
+  height: 2.8vh;
+  width: 10vw;
+  color: white;
+  background-color: black;
+}
+footer div.SignUp input.Join {
+  border: 1px solid;
+  width: 5vw;
+  height: 2.8vh;
+  color: white;
+  background-color: black;
+}
+footer input.SignUp:hover {
+  background-color: gray;
+}
+footer input.Join:hover {
+  background-color: goldenrod;
+  border-color: goldenrod;
+}
+footer #Credentials {
+  display: flex;
+  justify-content: space-between;
+  margin: 15% auto 0 auto;
+}
+footer #Credentials #linksToFbAndTwt {
+  width: auto;
+  height: 4vh;
+  display: flex;
+}
+footer img {
+  width: 3vw;
+  height: 4vh;
+}
+
+#headerlink a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#headerlink a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#headerlink a:hover {
+  color: gray;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#footerlink a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#mainElmLink a:link {
+  color: black;
+  text-decoration: none;
+}
+
+#mainElmLink a:visited {
+  color: gray;
+}
+
+#mainElmLink a:hover {
+  color: goldenrod;
+}
+
+@media (max-width: 915px) {
+  header {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  header .left {
+    width: 100%;
+  }
+  header .left div {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  header .right {
+    width: 95%;
+    margin: 3% 2.5%;
+  }
+  header .right ul {
+    padding: 0;
+  }
+  header .right ul li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+  }
+  header .right ul input.submit {
+    border: 0;
+    padding: 0 25%;
+    height: 2.8vh;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+    width: 50%;
+  }
+  header .right img {
+    width: 4vw;
+    height: 2.8vh;
+  }
+  main div.pfpContainer img {
+    width: 43%;
+  }
+  main section.contentOfText {
+    width: 80%;
+    padding: 5% 10%;
+  }
+  footer {
+    width: 90%;
+    padding: 5%;
+  }
+  footer div {
+    color: white;
+  }
+  footer div.SignUp input.SignUp {
+    border: 1px solid;
+    padding: 0vh 4vw 0vh 1vw;
+    height: 2.8vh;
+    width: 40%;
+    color: white;
+    background-color: black;
+  }
+  footer div.SignUp #fName {
+    border: 1px solid;
+    padding: 0vh 4vw 0vh 1vw;
+    height: 2.8vh;
+    width: 40%;
+    color: white;
+    background-color: black;
+  }
+  footer div.SignUp #pNumber {
+    border: 1px solid;
+    padding: 0vh 4vw 0vh 1vw;
+    height: 2.8vh;
+    width: 40%;
+    color: white;
+    background-color: black;
+  }
+  footer div.SignUp input.Join {
+    width: 25%;
+  }
+  footer #Credentials {
+    display: block;
+  }
+  footer #Credentials #linksToFbAndTwt {
+    width: auto;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+  }
+  footer img {
+    width: 8vw;
+    height: 4vh;
+  }
+}/*# sourceMappingURL=aboutPageStyle.css.map */

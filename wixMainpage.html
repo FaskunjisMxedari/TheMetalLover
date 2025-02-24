@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T.M.L</title>
+    <link rel="stylesheet" href="style01.css">
+    <meta name="keywords" content="metal, heavy metal, rock, hard rock, music, electric guitar, stratocaster, metal genres, dave mustaine, blogs, musicblogpage, system of a down, soad, black sabbath.">
+    <meta name="author" content="Aleksi Izoria">
+    <meta name="description" content="blog page dedicated to metal music">
+</head>
+
+    <!-- კოდის წაკითხვისას მიმაჩნია სწორი თუ გაითვალისწინებთ იმ წესს, რომლითაც ავაწყვე მე. როდესაც გვერდს შევხედე, გადავწყვიტე დამეყო სამ ნაწილად, თავი(ჰედერი), მთავარი/ძირითადი ნაწილი და 
+    ქვედა კოლონტიტული. თითოეული ნაწილის კოდის დაწყებამდე, კომენტირებით ვცდილობ ავხსნა რა რატომ არის გამოყენებული. კლასების და პირადი ნომრების სახელები ვეცადე ყველანაირად შესაბამისი 
+    და მორგებული ყოფილიყო მინიჭებული ელემენტებისთვის 
+    -->
+
+<body>
+    <!-- ჰედერი დაყოფილია ორ სექციად მარჯვენა და მარცხენად რომელიც შემდეგ, ტელეფონის ზომის მიღებისას იცვლიან ადგილდებარეობას და მარჯვენა ხდება ქვედა, მარცხენა ზედა.
+    მარცხენა სექცია მოიცავს დივ ელემენტს, რომელიც შეიცავს ლოგოს და გვერდის სახელის აბრევიატურას. რაც შეეხება მარჯვენა სექციას, მასში მოთავსებულია ჩამონათვალი ეგრეთწოდებული ლისტი
+    რომლის თითოეული წევრი არის დამაკავშირებელი ლინკი, home-გვაბრუნებს მთავარ გვერდზე, about-გადავყავართ გვერდზე, რომელიც გვიჩვენებს იფნორმაციას ავტორზე, Subscribe-გადაგვამისამართებს გვერდის
+    ბოლოში, სადაც შეგვიძლია მოკლე რეგისტრაცია გავიაროთ, შემდეგი ელემენტი სიაში არის საძიებო სისტემის დიზაინი, რომელიც, სამწუხაროდ არასაკმარისი ცოდნის გამო ვერ ავამუშავე, და ბოლო ორი იკონი არის
+    ღილაკი რომლებიც გვაკავშირებენ ლოგოს შესაბამის საიტთან. ჰედერის განხილვა მთავრდება ამით.
+    -->
+    <header id="headerlink">
+        <section class="left">
+            <div>
+                <img src="rock-svgrepo-com.svg" alt="Rock'nRoll" id="logo">
+                <h1>T.<span style="color: red;">M</span>.L</h1>
+            </div> <!-- t.b.l logo -->
+        </section>
+        <section class="right">   
+            <ul>
+                <li>
+                    <a href="wixMainpage.html">Home</a>
+                </li> <!-- home -->
+
+                <li>
+                    <a href="about.html">About</a>
+                </li> <!-- About -->
+
+                <li>
+                    <a href="#footerlink">Subscribe</a>
+                </li> <!-- Subscribe -->
+
+                <li class="submit">
+                    <input class="submit" type="text" placeholder="Search...">
+                </li> <!-- search -->
+
+                <li>
+                    <a href="https://www.facebook.com/" style="width: 3%; height: 3%;">
+                        <img src="facebook-brands.svg" alt="facebook">
+                    </a>
+                </li> <!--fb logo-->
+                <li>
+                    <a href="https://x.com/" style="width: 3%; height: 3%;">
+                        <img src="twitter-brands.svg" alt="twitter">
+                    </a>
+                </li> <!--twittr logo-->
+            </ul>
+        </section>
+    </header>
+
+    <!-- მთავარი/ძირითადი ნაწილი იყოფა ორ სექციად, ერთი არის ეგრეთწოდებული გაფორმება, ხოლო მეორე მოიცავს უკვე თვითონ ბლოგების განსათავსებელ გვერდს და თვითონ ბლოგებს. დავიწყოთ ზედა სექციით
+    ის მოიცავს ერთ დივ ელემენტს და უკანა ფონზე განთავსებულ სურათს. რაც შეეხება დივი გახლავთ ის ბარათი, რომელიც გვერდის სახელს და "ლოზუნგს" წარმოგვიდგენს. პირველი სექცია ამით ამოიწურება
+    რაც შეეხება მეორე სექციას, ის მოიცავს დივს სახელად ბლოგფეიჯ, რაც მიუთითებს რომ მისი დანიშნულებაა იყოს გვერდი, მონაკვეთი სადაც აიტვირთება ბლოგები, ის მოიცავს ტექსტს სახელოთ ყველა პოსტი და
+    კიდევ ერთ უსახელო დივს. ეს დივი ამჯერად არის კონტეინერი, რომელიც მოიცავს დივებს სახელად ბლოგი და მათ მოქნილად განლაგებაში მეხმარება. თითოეული ბლოგი გაყოფილია ორ უჯრად, ერთი რომელიც
+    იკავებს სურათს, მეორე რომელიც იკავებს ტექსტს და ზოგად ინფორმაციას მოცემულ ბლოგსა და თემაზე. დავიწყოთ ბლოგიმიჯჰოლდერით, ის მოიცავს ლინკს რომელშიც ჩასმულია სურათი. რაც შეეხება ბლოგ-
+    ტექსტჰოლდერს ის მოიცავს სამ გამყოფს. პირველი გამყოფი, სახელად ბლოგუზერინფო იყოფა ორად, პირველი-ბლოგუზერავატარი, რომელიც იკავებს ავტორის მიერ არჩეულ ავატარს პროფილის სურათად და მეორე 
+    სახელად ბლოგდატა გვაძლევს ინფორმაციას ბლოგის ავტორის სახელის, მისი გამოქვეყნების შესახებ შესახებ. მეორე გამყოფი სახელად ბლოგკონტენტი მოიცავს ინფორმაციას, რომელიც განთავსებულია ბლოგში და 
+    მის სათაურს, ეს ყველაფერი კი მოქცეულია ა ტეგში, რომელსაც გადავყავართ შესაბამის გვერდზე, რომელიც უფრო განავრცობს ბლოგს. მესამე გამყოფი მოიცავს ერთ ესაიდ ელემენტს, რომელიც მოიცავს გამყოფ ხაზს
+    ზედა დივებსა და ამ დივს შორის, ორი პარაგრაფთან ერთად(ესაიდის გარეთ) რომლებიც გვეუბნებიან ინფორმაციას(ამჯერად მანუალურად შეყვანილს) იმის შესახებ თუ რამდენმა ნახა ბლოგი დააკომენტარა და ა.შ
+    ამით  მთავრდება მთავარი ნაწილი
+    -->
+    <main id="mainLink">
+        <section>
+            <div>
+                <h1>
+                    THE MUSIC LOVER
+                </h1>
+                <p>
+                    READ ALL ABOUT IT
+                </p>
+            </div>
+            <img src="guitarlibrary08.jpg" alt="guitarlibrary01">
+        </section>
+        <section>
+            <div id="blogPage">
+                <p style="margin: 5vh 0vw 5vh 0vw;">All Posts</p>
+                <div>
+                    <div class="Blog" id="mainElmLink">
+                        <div class="blogImgHolder">
+                            <a href="blogNo1.html">
+                            <img src="metalSubGenres.jpg" alt="metalSubGenres">    
+                            </a>
+                        </div>
+                        <div class="blogTxtHolder">
+                            <div class="blogUserInfo">
+                                <div class="blogUserAvatar">
+                                    <img src="circle-user-solid.svg" alt="Avatar" class="avatar"> 
+                                </div>
+                                <div class="blogData">
+                                    <p>Admin</p>
+                                    <p>2025-02-21</p>
+                                </div>
+                            </div>
+                            <div class="blogContent">
+                                <a href="blogNo2.html">
+                                <h1>DO THEY ALL SOUND SAME? LETS UNRAVEL THE DIFFERENCES BETWEEN MANY GENRES OF METAL!!!</h1>
+                                <P>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....</P>
+                                </a>
+                            </div>
+                            <div class="blogInterraction">
+                                <aside>
+                                    <hr>
+                                </aside>
+                                <p>1023 views</p>
+                                <p>0 comments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Blog" id="mainElmLink">
+                        <div class="blogImgHolder">
+                            <a href="blogNo2.html">
+                                <img src="5metalBands.png" alt="5metalBands">
+                            </a>
+                            
+                        </div>
+                        <div class="blogTxtHolder">
+                            <div class="blogUserInfo">
+                                <div class="blogUserAvatar">
+                                    <img src="circle-user-solid.svg" alt="Avatar" class="avatar"> 
+                                </div>
+                                <div class="blogData">
+                                    <p>Admin</p>
+                                    <p>2025-02-21</p>
+                                </div>
+                            </div>
+                            <div class="blogContent">
+                                <a href="blogNo2.html">
+                                    <h1>THESE ARE 5 OF MY FAVOURITE METAL BANDS WHICH HELPED ME TO START LISTENING TO IT!!!</h1>
+                                <P>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....</P>
+                                </a>
+                                
+                            </div>
+                            <div class="blogInterraction">
+                                <aside>
+                                    <hr>
+                                </aside>
+                                <p>921 views</p>
+                                <p>0 comments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Blog" id="mainElmLink">
+                        <div class="blogImgHolder">
+                            <a href="blogNo3.html">
+                                <img src="typesOfGuitars.jpg" alt="typesOfGuitars">
+                            </a>
+                            
+                        </div>
+                        <div class="blogTxtHolder">
+                            <div class="blogUserInfo">
+                                <div class="blogUserAvatar">
+                                    <img src="circle-user-solid.svg" alt="Avatar" class="avatar"> 
+                                </div>
+                                <div class="blogData">
+                                    <p>Admin</p>
+                                    <p>2025-02-21</p>
+                                </div>
+                            </div>
+                            <div class="blogContent">
+                                <a href="blogNo3.html">
+                                    <h1>HOW MANY GUITAR TYPES ARE THERE AND WHAT SHOULD YOU KNOW ABOUT THEM BEFORE BUYING!!!</h1>
+                                    <P>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....</P>
+                                </a>
+                                
+                            </div>
+                            <div class="blogInterraction">
+                                <aside>
+                                    <hr>
+                                </aside>
+                                <p>1003 views</p>
+                                <p>0 comments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Blog" id="mainElmLink">
+                        <div class="blogImgHolder">
+                            <a href="blogNo4.html">
+                            <img src="daveMustaine.jpg" alt="daveMustaine">    
+                            </a>
+                            
+                        </div>
+                        <div class="blogTxtHolder">
+                            <div class="blogUserInfo">
+                                <div class="blogUserAvatar">
+                                    <img src="circle-user-solid.svg" alt="Avatar" class="avatar"> 
+                                </div>
+                                <div class="blogData">
+                                    <p>Admin</p>
+                                    <p>2025-02-21</p>
+                                </div>
+                            </div>
+                            <div class="blogContent">
+                                <a href="blogNo4.html">
+                                <h1>DAVE MUSTAINE, TRAGIC ENDING WHICH OPENED DOORS TO NEW CHALLENGES IN THE MUSIC CAREER</h1>
+                                <P>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....</P>
+                                </a>
+                                
+                            </div>
+                            <div class="blogInterraction">
+                                <aside>
+                                    <hr>
+                                </aside>
+                                <p>1923 views</p>
+                                <p>0 comments</p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="Blog" id="mainElmLink">
+                        <div class="blogImgHolder">
+                            <a href="blogNo5.html">
+                                <img src="stratocaster.jpg" alt="Stratocaster">
+                            </a>
+                        </div>
+                        <div class="blogTxtHolder">
+                            <div class="blogUserInfo">
+                                <div class="blogUserAvatar">
+                                    <img src="circle-user-solid.svg" alt="Avatar" class="avatar"> 
+                                </div>
+                                <div class="blogData">
+                                    <p>Admin</p>
+                                    <p>2025-02-21</p>
+                                </div>
+                            </div>
+                            <a href="blogNo5.html">
+                                <div class="blogContent">
+                                    <h1>STRATOCASTER, OVERRATED OR BEGINNER-FRIENDLY GUITAR, WHICH ONE IS IT?</h1>
+                                    <P>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....</P>
+                                </div>
+                            </a>
+                            <div class="blogInterraction">
+                                <aside>
+                                    <hr>
+                                </aside>
+                                <p>1016 views</p>
+                                <p>0 comments</p>
+                                <!-- <Button id="hrtbtn1" class="btn"><i class="fa-regular fa-heart"></i></Button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> <!--Blog page-->
+    </main>
+
+
+    <!-- ქვედა კოლონტიტული მოიცავს სამი გამყოფის(დივის) ერთობლიობას. პირველი დივი მოიცავს მხოლოდ სათაურს. მეორე დივი სახელად დარეგისტრირდი მოიცავს პარაგარაფს და მის ქვემოთ ჩაშლილ ფორმას
+    რომელიც თავისთავად მოიცავს სიას ელემენტებით:იმეილისთვის გაკუთვნილი ველი, სრული სახელისთვის განკუთვნილი ველი, ტელეფონის ნომერი, და დაბადების თარიღი. მესამე გამყოფი მოიცავს კრედენციალებს 
+    ინტელექტუალური საკუთრების მფლობელზე ინფორმაციას და ფეისბუქ-ტვიტერ ლინკებს 
+    -->
+    <footer id="footerlink">
+        <div>
+            <h1>Subscribe here to get notifications of latest posts!!!</h1>
+        </div>
+        <br>
+        <div class="SignUp">
+            <p>Enter Your Email Here!*</p>
+            <form>
+                <ul>
+                    <li>
+                        <input class="SignUp" type="email" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$">
+                        <input class="Join" type="submit" value="JOIN">
+                    </li>
+                    <li>
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="fName" name="name" required>
+                    </li>
+                    <li>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="pNumber" name="phone" placeholder="512-345-678" pattern="^([0-9])([0-9])([0-9])\-\([0-9])([0-9])([0-9])-([0-9])([0-9])([0-9])" required>
+                    </li>
+                    <li>
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" name="dOBirth" id="dob" required min="1924-01-01" max="2009-02-22">
+                    </li>
+                </ul>
+            </form>
+            
+        </div>
+        <div id="Credentials">
+            <div>
+                <p>© 2035 by The Book Lover. Powered and secured by Wix</p>
+                <P>Content was modified by A.Izoria</P>
+            </div>
+            <div id="linksToFbAndTwt">
+                <a href="facebook.com">
+                    <img src="facebook-brands(1).svg" alt="facebook">
+                </a>
+                <a href="twitter.com">
+                    <img src="twitter-brands(1).svg" alt="twitter">
+                </a>
+            </div>
+        </div>
+        
+    </footer>
+    <!-- ეს კოდი აქრობს და აჩენს ჰეადერს თავიდამ -->
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+        document.getElementById("headerlink").style.top = "0";
+        } else {
+        document.getElementById("headerlink").style.top = "-100%";
+        }
+        prevScrollpos = currentScrollPos;
+        } 
+    </script>
+</body>
+</html>

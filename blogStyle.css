@@ -1,0 +1,369 @@
+body {
+  margin: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+/*header is split into two parts left and right
+left part contains just logo and right part contains
+important pages: Home; About; Subscribe; search and facebook/twitter(a.k.a. x)
+links/hyperlinks, using sass/scss i have created a hierarchy which might be
+hard to understand even for me. since i am writing this comment at the begining
+i myself don't know yet. i will keep you updated*/
+header {
+  background-color: white;
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+header .left {
+  width: 50%;
+}
+header .left div {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+header .left div #logo {
+  width: 7.5%;
+  height: 100%;
+  margin: 2.5% 1.5%;
+}
+header .left div h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 200%;
+}
+header .right {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 2%;
+}
+header .right ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .right ul li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+header .right ul input.submit {
+  border: 0;
+  padding: 2vh 1vw 2vh 3vw;
+  height: 2.8vh;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+  width: 15vw;
+}
+header .right img {
+  width: 3vw;
+  height: 3vh;
+}
+
+main section {
+  padding: 5% 25%;
+}
+main section #theBlog {
+  margin-top: 5%;
+}
+main section #theBlog #userInfo {
+  display: flex;
+}
+main section #theBlog #userInfo img {
+  width: 6%;
+  margin-right: 1%;
+}
+main section #theBlog #userInfo p {
+  margin: 2%;
+  display: list-item;
+}
+main section #theBlog #blogContent h1 {
+  font-size: 218%;
+  font-weight: inherit;
+  width: 85%;
+}
+main section #theBlog #blogContent p.boldIntroText {
+  font-size: 135%;
+  width: 87%;
+  font-weight: bold;
+}
+main section #theBlog #blogContent img {
+  width: 100%;
+}
+main section #theBlog #blogContent p {
+  font-size: 125%;
+}
+main section #theBlog #blogContent div.textWithLeftBorder {
+  border-left: goldenrod 3px solid;
+}
+main section #theBlog #blogContent div.textWithLeftBorder h1 {
+  margin-left: 2%;
+  font-style: italic;
+  font-weight: inherit;
+}
+main section #theBlog #blogContent div.links {
+  display: flex;
+  align-items: center;
+}
+main section #theBlog #blogContent div.links img {
+  width: 1.75vw;
+  margin: 0.5em;
+  height: 2vh;
+}
+main section #theBlog #blogContent div {
+  display: flex;
+}
+main section #theBlog #blogContent div p {
+  margin-right: 5%;
+}
+main #subBlogPage {
+  padding: 0;
+}
+main #subBlogPage div.topMessage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3% 0;
+  padding: 5% 25%;
+}
+main #subBlogPage div.topMessage div.topMessage a {
+  text-decoration: none;
+}
+main #subBlogPage div.otherBlogContainer {
+  display: flex;
+  width: 100vw;
+  justify-content: space-evenly;
+}
+main #subBlogPage div.otherBlogContainer div.blogPost {
+  width: 17%;
+  height: auto;
+  margin: 0 4%;
+}
+main #subBlogPage div.otherBlogContainer div.blogPost div.blogImgHolder {
+  max-height: 30vh;
+}
+main #subBlogPage div.otherBlogContainer div.blogPost div.blogImgHolder a img {
+  width: 100%;
+  max-height: 29vh;
+}
+main #subBlogPage div.otherBlogContainer div.blogTxtHolder div.blogContent a h1 {
+  font-size: inherit;
+}
+main #subBlogPage div.otherBlogContainer div.blogTxtHolder div.blogInterraction {
+  display: flex;
+  justify-content: space-evenly;
+}
+main #subBlogPage div.areaOfCommenting {
+  padding: 5% 25%;
+}
+main #subBlogPage div.areaOfCommenting form textarea {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  height: auto;
+  width: 50%;
+  background-color: black;
+  padding: 5% 25% 0 25%;
+}
+footer div {
+  color: white;
+}
+footer #Credentials {
+  display: flex;
+  justify-content: space-between;
+  margin: 15% auto 0 auto;
+}
+footer #Credentials #linksToFbAndTwt {
+  width: auto;
+  height: 4vh;
+  display: flex;
+}
+footer img {
+  width: 3vw;
+  height: 4vh;
+}
+
+#blogPost a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#blogPost a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#topMessage a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#topMessage a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#mainBlogPage a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#mainBlogPage a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#headerlink a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#headerlink a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#headerlink a:hover {
+  color: gray;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#footerlink a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#mainElmLink a:link {
+  color: black;
+  text-decoration: none;
+}
+
+#mainElmLink a:visited {
+  color: gray;
+}
+
+#mainElmLink a:hover {
+  color: goldenrod;
+}
+
+@media (max-width: 1280px) {
+  footer {
+    height: auto;
+    width: 90%;
+    padding: 5% 5% 0 5%;
+  }
+  footer #linksToFbAndTwt {
+    width: auto;
+    height: 4vh;
+    display: flex;
+  }
+}
+@media (max-width: 915px) {
+  header {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  header .left {
+    width: 100%;
+  }
+  header .left div {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  header .right {
+    width: 95%;
+    margin: 3% 2.5%;
+  }
+  header .right ul {
+    padding: 0;
+  }
+  header .right ul li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+  }
+  header .right ul input.submit {
+    border: 0;
+    padding: 0 25%;
+    height: 2.8vh;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+    width: 50%;
+  }
+  header .right img {
+    width: 4vw;
+    height: 2.8vh;
+  }
+  main section {
+    padding: 5% 10%;
+  }
+  main section #theBlog #userInfo {
+    justify-content: space-evenly;
+  }
+  main section #theBlog #blogContent h1 {
+    font-size: 195%;
+  }
+  main section #theBlog #blogContent p.boldIntroText {
+    font-size: 125%;
+  }
+  main section #theBlog #blogContent div {
+    display: flex;
+  }
+  main section #theBlog #blogContent div p {
+    margin-right: 5%;
+    font-size: 125%;
+  }
+  main section #theBlog #blogContent div.links a img {
+    width: 3.75vw;
+  }
+  main #subBlogPage div.otherBlogContainer div.blogTxtHolder div.blogInterraction {
+    display: flex;
+    font-size: smaller;
+    flex-direction: column;
+  }
+  footer {
+    width: 90%;
+    padding: 5%;
+  }
+  footer div {
+    color: white;
+  }
+  footer #Credentials {
+    display: block;
+  }
+  footer #Credentials #linksToFbAndTwt {
+    width: auto;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+  }
+  footer img {
+    width: 8vw;
+    height: 4vh;
+  }
+}/*# sourceMappingURL=blogStyle.css.map */

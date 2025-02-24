@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T.M.L</title>
+    <link rel="stylesheet" href="aboutPageStyle.css">
+    <meta name="keywords" content="metal, heavy metal, rock, hard rock, music, electric guitar, stratocaster, metal genres, dave mustaine, blogs, musicblogpage, system of a down, soad, black sabbath.">
+    <meta name="author" content="Aleksi Izoria">
+    <meta name="description" content="blog page dedicated to metal music">
+</head>
+<body>
+    <header id="headerlink">
+        <section class="left">
+            <div>
+                <img src="rock-svgrepo-com.svg" alt="Rock'nRoll" id="logo">
+                <h1>T.<span style="color: red;">M</span>.L</h1>
+            </div> <!-- t.b.l logo -->
+        </section>
+        <section class="right">   
+            <ul>
+                <li>
+                    <a href="wixMainpage.html">Home</a>
+                </li> <!-- home -->
+
+                <li>
+                    <a href="about.html">About</a>
+                </li> <!-- About -->
+
+                <li>
+                    <a href="#footerlink">Subscribe</a>
+                </li> <!-- Subscribe -->
+
+                <li class="submit">
+                    <input class="submit" type="text" placeholder="Search...">
+                </li> <!-- search -->
+
+                <li>
+                    <a href="https://www.facebook.com/" style="width: 3%; height: 3%;">
+                        <img src="facebook-brands.svg" alt="facebook">
+                    </a>
+                </li> <!--fb logo-->
+                <li>
+                    <a href="https://x.com/" style="width: 3%; height: 3%;">
+                        <img src="twitter-brands.svg" alt="twitter">
+                    </a>
+                </li> <!--twittr logo-->
+            </ul>
+        </section>
+    </header>
+
+    <!-- ძირითადი ნაწილი მოიცავს სექციას დივს და სექციას ისევ
+    პირველი სექცია მოიცავს გაფორმებას უკანა ფონს, მეორე გამყოფი
+    მოიცავს პროფილის სურათს, ხოლო მესამე სექცია მოიცავს ინფორმაციას
+    ავტორზე
+    -->
+    <main id="mainLink">
+        <section class="decoration">
+            <div class="decorContainer">
+                <img src="backgroundPicforTML.jpg" alt="musicStore">
+            </div>
+        </section>
+        <div class="pfpContainer">
+            <img src="pfp.jpg" alt="Aleksi Izoria">
+        </div>
+        <section class="contentOfText">
+            <div>
+                <p>The crreator of this page's patent version is the site wix.com, however, 
+                    considering the fact that it was given as a homework to Aleksi Izoria, to 
+                    work on a project and create a site similar to one given on the site he modified 
+                    it to his willing. The original site mainly was dedicated to a site where a person
+                    would post blogs. The site provided relevant headlines and images for those who 
+                    intended to make this site about bookreading and it's virtues. However, I,
+                    Aleksi Izoria decided to modify subject to something i understand and relate 
+                    to better, Music, specifically, metal music. While it is true i have not filled 
+                    out the blogs with relevant information, it is due to my understanding of a homework, 
+                    which can be expanded as: "do your best, as much as possible to make YOUR MODIFIED 
+                    VERSION OF SITE to look as similar to the chosen one. Pay most attention to details 
+                    that are relevant to your homework." Therefore i ignored the part of gathering 
+                    information about the headlines i chose for blogs and concentrated on actually 
+                    building the site. If this site is lacking something, i will gladly accept the 
+                    criticism and will try to work better next time, with less distraction, more 
+                    hard-work and knowledge about this field. I hope you appreciate my work!!!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footerlink">
+        <div>
+            <h1>Subscribe here to get notifications of latest posts!!!</h1>
+        </div>
+        <br>
+        <div class="SignUp">
+            <p>Enter Your Email Here!*</p>
+            <form>
+                <ul>
+                    <li>
+                        <input class="SignUp" type="email" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$">
+                        <input class="Join" type="submit" value="JOIN">
+                    </li>
+                    <li>
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="fName" name="name" required>
+                    </li>
+                    <li>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="pNumber" name="phone" placeholder="512-345-678" pattern="^([0-9])([0-9])([0-9])\-\([0-9])([0-9])([0-9])-([0-9])([0-9])([0-9])" required>
+                    </li>
+                    <li>
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" name="dOBirth" id="dob" required min="1924-01-01" max="2009-02-22">
+                    </li>
+                </ul>
+            </form>
+            
+        </div>
+        <div id="Credentials">
+            <div>
+                <p>© 2035 by The Book Lover. Powered and secured by Wix</p>
+                <P>Content was modified by A.Izoria</P>
+            </div>
+            <div id="linksToFbAndTwt">
+                <a href="facebook.com">
+                    <img src="facebook-brands(1).svg" alt="facebook">
+                </a>
+                <a href="twitter.com">
+                    <img src="twitter-brands(1).svg" alt="twitter">
+                </a>
+            </div>
+        </div>
+        
+    </footer>
+    <!-- ეს კოდი აქრობს და აჩენს ჰეადერს თავიდამ -->
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+        document.getElementById("headerlink").style.top = "0";
+        } else {
+        document.getElementById("headerlink").style.top = "-100%";
+        }
+        prevScrollpos = currentScrollPos;
+        } 
+    </script>
+</body>
+</html>
